@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
         printError(code, argv);
         exit(EXIT_ERROR);
     }
-	
+
     code = pthread_join(thread, NULL);
     if (code != THREAD_JOIN_SUCCESS) {
         printError(code, argv);
