@@ -17,7 +17,7 @@ void printLines(const char *str) {
 void printError(int code, char **argv) {
     char buf[BUFFER_SIZE];
     strerror_r(code, buf, sizeof buf);
-    printf("%s: creating thread: %s\n", argv[0], buf);
+    printf("%s: %s\n", argv[0], buf);
 }
 
 void* thread_body(void * param) {
