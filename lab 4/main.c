@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
         exit(EXIT_ERROR);
     }
 
-	code = pthread_join(thread, NULL);
+    code = pthread_join(thread, NULL);
     if (code != THREAD_JOIN_SUCCESS) {
         printError(code, argv);
         exit(EXIT_ERROR);
